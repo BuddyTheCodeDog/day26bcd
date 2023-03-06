@@ -1,6 +1,6 @@
 import express from "express";
 import fs from "fs";
-import { TodoType } from "./domain/todoType";
+import { TodoType } from "../domain/todoType";
 import cors from "cors";
 
 import { createClient } from '@supabase/supabase-js'
