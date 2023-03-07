@@ -6,7 +6,7 @@
     let i = 1;
    
     async function getToDos(){
-        const result = await axios.get("http://localhost:3002/test");
+        const result = await axios.get("https://day26bcd.vercel.app/test");
        
         return result.data;
 

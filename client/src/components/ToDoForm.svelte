@@ -5,7 +5,7 @@
   let when:string;
 
 async function submitTodo(){
-  const result = await axios.post("http://localhost:3002/test",{
+  const result = await axios.post("https://day26bcd.vercel.app/test",{
             what: what,
             when: when,
             

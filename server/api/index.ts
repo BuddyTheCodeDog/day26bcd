@@ -28,6 +28,8 @@ app.post("/test", async function(req, res){
     const { error } = await supabase
   .from('counties')
   .insert({name: what });
+  console.log("test console");
+  console.log(what);
   res.send("supabase");
 });
 
@@ -41,6 +43,7 @@ app.get("/test", async function(req,res){
             res.status(500).send({ error: "Error retrieving data from Supabase" });
         } else {
             console.log(data);
+            
             res.send(data); // send the value of the "name" field from the first returned row
         }
     } catch (err) {
