@@ -43,6 +43,7 @@ app.get("/test", async function(req,res){
             res.status(500).send({ error: "Error retrieving data from Supabase" });
         } else {
             console.log(data);
+            console.log("get get get");
             
             res.send(data); // send the value of the "name" field from the first returned row
         }
